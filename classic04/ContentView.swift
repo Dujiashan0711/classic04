@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var sun : Bool=false
+    @State private var ask : Bool=false
     var body: some View {
         TabView{
             ZStack{
