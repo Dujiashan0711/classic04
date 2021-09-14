@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2BF18C226F05C1400143181 /* show.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF18C126F05C1400143181 /* show.swift */; };
 		E2FD716F26EB908A00427412 /* classic04App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FD716E26EB908A00427412 /* classic04App.swift */; };
 		E2FD717126EB908A00427412 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FD717026EB908A00427412 /* ContentView.swift */; };
 		E2FD717326EB908D00427412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FD717226EB908D00427412 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2BF18C126F05C1400143181 /* show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = show.swift; sourceTree = "<group>"; };
 		E2FD716B26EB908A00427412 /* classic04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classic04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FD716E26EB908A00427412 /* classic04App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classic04App.swift; sourceTree = "<group>"; };
 		E2FD717026EB908A00427412 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				E2FD716E26EB908A00427412 /* classic04App.swift */,
 				E2FD717E26EB90AB00427412 /* Montserrat */,
 				E2FD717026EB908A00427412 /* ContentView.swift */,
+				E2BF18C126F05C1400143181 /* show.swift */,
 				E2FD717226EB908D00427412 /* Assets.xcassets */,
 				E2FD717726EB908D00427412 /* Info.plist */,
 				E2FD717426EB908D00427412 /* Preview Content */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BF18C226F05C1400143181 /* show.swift in Sources */,
 				E2FD717126EB908A00427412 /* ContentView.swift in Sources */,
 				E2FD716F26EB908A00427412 /* classic04App.swift in Sources */,
 			);

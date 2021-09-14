@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var sun : Bool=false
     var body: some View {
         TabView{
             ZStack{
@@ -27,11 +28,22 @@ struct ContentView: View {
             .resizable()
             .frame(width:400)
             .offset(x:0, y: 140)
-        Image(systemName: "sun.max.fill")
-            .resizable()
-            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-            .offset(x: 0, y: -200)
+                Button(action:{
+                    self.sun = true
+                }) {
+                    VStack{
+                        Spacer()
+            Image(systemName: "sun.max.fill")
+                .resizable()
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                Spacer()
+                Spacer()
+                }
+                }
+                .sheet(isPresented: self.$sun, content: {
+                    show(sun: self.$sun)
+                })
         Image(systemName: "music.note")
             .resizable()
             .frame(width: 30, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -154,7 +166,7 @@ struct ContentView: View {
             .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
             .font(.title)
             .offset(x: 0, y: -180)
-        Text("度過了灰常愉快的一天（完）")
+        Text("度過了灰常愉快的一天(完)")
             .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
             .font(.title)
             .offset(x: 5, y: -140)
